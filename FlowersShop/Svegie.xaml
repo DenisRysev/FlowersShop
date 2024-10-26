@@ -1,0 +1,104 @@
+﻿<Window x:Class="FlowersShop.Svegie"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlowersShop"
+        mc:Ignorable="d"
+        Title="Svegie" Height="450" Width="800">
+    <Grid>
+        <Image Source="img\fon4.jpg" Margin="-191,-6,191,6" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-78.813"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Source="img\fon6.jpg" Margin="216,-79,-216,79" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-67.384"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Canvas x:Name="highlightCanvas" Margin="204,103,400,49" Background="#FFE6D6B8" MouseEnter="highlightCanvas_MouseEnter" MouseLeave="highlightCanvas_MouseLeave">
+            <Label x:Name="price2" Canvas.Left="57" Canvas.Top="171" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Content=""/>
+            <Image x:Name="buket2" Width="200" Canvas.Left="-14" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="10">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.455"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Button FontSize="16" FontWeight="Bold" Background="#FF498C51" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Width="26" Canvas.Left="19" Canvas.Top="197" Height="26" Click="Button_Click_2">+</Button>
+            <Button FontSize="16" FontWeight="Bold" Background="#FF498C51" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Width="26" Canvas.Left="126" Canvas.Top="197" Height="26" Click="Button_Click_5">-</Button>
+            <TextBox x:Name="ctet2" Canvas.Left="50" Canvas.Top="197" HorizontalAlignment="Center" VerticalAlignment="Top" Width="71" Height="24">0</TextBox>
+            <Button FontSize="14" FontWeight="Bold" Background="#FF498C51" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Width="133" Canvas.Left="19" Canvas.Top="226" Height="22">В корзину</Button>
+        </Canvas>
+        <Canvas x:Name="highlightCanvas1" Margin="10,103,604,49" Background="#FFE6D6B8" MouseEnter="highlightCanvas1_MouseEnter" MouseLeave="highlightCanvas1_MouseLeave">
+            <Label x:Name="price1" Canvas.Left="56" Canvas.Top="174" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Content=""/>
+            <Image x:Name="buket1" Width="250" Canvas.Left="-48" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Canvas.Top="5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-90.596"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Button FontSize="16" FontWeight="Bold" Background="#FF498C51" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Width="26" Canvas.Left="19" Canvas.Top="197" Height="26" Click="Button_Click">+</Button>
+            <Button FontSize="16" FontWeight="Bold" Background="#FF498C51" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Width="26" Canvas.Left="126" Canvas.Top="197" Height="26" Click="Button_Click_1">-</Button>
+            <TextBox x:Name="ctet1" Canvas.Left="50" Canvas.Top="197" HorizontalAlignment="Center" VerticalAlignment="Top" Width="71" Height="24">0</TextBox>
+            <Button FontSize="14" FontWeight="Bold" Background="#FF498C51" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Width="133" Canvas.Left="19" Canvas.Top="226" Height="22">В корзину</Button>
+
+        </Canvas>
+        <Canvas x:Name="highlightCanvas2" Margin="405,103,206,49" Background="#FFE6D6B8" MouseEnter="highlightCanvas2_MouseEnter" MouseLeave="highlightCanvas2_MouseLeave">
+            <Label x:Name="price3" Canvas.Left="56" Canvas.Top="169" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Content=""/>
+            <Image x:Name="buket3" Width="190" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Top="10" Canvas.Left="-19" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-55.035"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Button FontSize="16" FontWeight="Bold" Background="#FF498C51" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Width="26" Canvas.Left="19" Canvas.Top="197" Height="26" Click="Button_Click_3">+</Button>
+            <Button FontSize="16" FontWeight="Bold" Background="#FF498C51" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Width="26" Canvas.Left="126" Canvas.Top="197" Height="26" Click="Button_Click_6">-</Button>
+            <TextBox x:Name="ctet3" Canvas.Left="50" Canvas.Top="197" HorizontalAlignment="Center" VerticalAlignment="Top" Width="71" Height="24">0</TextBox>
+            <Button FontSize="14" FontWeight="Bold" Background="#FF498C51" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Width="133" Canvas.Left="19" Canvas.Top="226" Height="22">В корзину</Button>
+        </Canvas>
+        <Canvas x:Name="highlightCanvas3" Margin="602,103,10,49" Background="#FFE6D6B8" MouseEnter="highlightCanvas3_MouseEnter" MouseLeave="highlightCanvas3_MouseLeave">
+            <Label x:Name="price4" Canvas.Left="56" Canvas.Top="170" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top">150 руб.</Label>
+            <Image x:Name="buket4" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="-14"/>
+            <Button FontSize="16" FontWeight="Bold" Background="#FF498C51" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Width="26" Canvas.Left="19" Canvas.Top="197" Height="26" Click="Button_Click_4">+</Button>
+            <Button FontSize="16" FontWeight="Bold" Background="#FF498C51" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Width="26" Canvas.Left="126" Canvas.Top="197" Height="26" Click="Button_Click_7">-</Button>
+            <TextBox x:Name="ctet4" Canvas.Left="50" Canvas.Top="197" HorizontalAlignment="Center" VerticalAlignment="Top" Width="71" Height="24">0</TextBox>
+            <Button FontSize="14" FontWeight="Bold" Background="#FF498C51" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Width="133" Canvas.Left="19" Canvas.Top="226" Height="22">В корзину</Button>
+        </Canvas>
+        <Canvas Margin="0,0,0,355" Background="#66000000">
+            <Button x:Name="korzina" FontSize="18" Canvas.Left="613" Canvas.Top="15" Background="White" HorizontalAlignment="Left" VerticalAlignment="Center" Width="155" FontWeight="Bold" Click="korzina_Click">Корзина</Button>
+            <Label FontSize="24" FontWeight="Bold" Foreground="White" Canvas.Left="284" Canvas.Top="8" HorizontalAlignment="Left" VerticalAlignment="Center">Цветучено</Label>
+            <Image Source ="img\pngwing.com (4).png" Width="40" HorizontalAlignment="Left" Canvas.Left="22" Canvas.Top="10" VerticalAlignment="Top" />
+            <Button Height="36" Width="42" Canvas.Left="21" Canvas.Top="12" Background="{x:Null}" Opacity="0" Click="vk"></Button>
+
+            <Image Source ="img\pngwing.com (5).png" Width="58" HorizontalAlignment="Center" Canvas.Left="75" VerticalAlignment="Top" Height="59" />
+            <Button Height="36" Width="42" Canvas.Left="83" Canvas.Top="12" Background="{x:Null}" Opacity="0" HorizontalAlignment="Left" VerticalAlignment="Center" Click="tg"></Button>
+
+            <Image Source ="img\pngwing.com (6).png" Width="58" HorizontalAlignment="Center" Canvas.Left="138" VerticalAlignment="Top" Height="57" Canvas.Top="1" />
+            <Button Height="36" Width="42" Canvas.Left="146" Canvas.Top="12" Background="{x:Null}" Opacity="0" HorizontalAlignment="Left" VerticalAlignment="Center" Click="ins"></Button>
+            <Button FontSize="18" Canvas.Left="479" Canvas.Top="15" Background="White" Width="114" FontWeight="Bold" Content="Назад" HorizontalAlignment="Left" Click="nazad" VerticalAlignment="Top"/>
+        </Canvas>
+    </Grid>
+</Window>

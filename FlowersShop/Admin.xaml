@@ -1,0 +1,53 @@
+﻿<Window x:Class="FlowersShop.Admin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlowersShop"
+        mc:Ignorable="d"
+        Title="Admin" Height="613.525" Width="1112.295">
+    <Grid>
+        <ListView x:Name="sotrudniki" Margin="10,94,581,37"  MouseDoubleClick="sotrudniki_MouseDoubleClick" >
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Пользователь" Width="40" DisplayMemberBinding="{Binding Код_пользователя}" />
+                    <GridViewColumn Header="Имя" Width="100" DisplayMemberBinding="{Binding Имя}" />
+                    <GridViewColumn Header="Фамилия" Width="100" DisplayMemberBinding="{Binding Фамиия}" />
+                    <GridViewColumn Header="Отчество" Width="100" DisplayMemberBinding="{Binding Отчество}" />
+                    <GridViewColumn Header="Паспорт" Width="80" DisplayMemberBinding="{Binding Код_паспорта}" />
+                    <GridViewColumn Header="Подразделение" Width="40" DisplayMemberBinding="{Binding Код_подразделения}" />
+                    <GridViewColumn Header="Должность" Width="40" DisplayMemberBinding="{Binding Код_должности}" />
+                    <GridViewColumn Header="Фото" Width="80" DisplayMemberBinding="{Binding Фото}" />
+                    <GridViewColumn Header="Телефон" Width="100" DisplayMemberBinding="{Binding Телефон}" />
+                    <GridViewColumn Header="Почта" Width="100" DisplayMemberBinding="{Binding Почта}" />
+                    <GridViewColumn Header="Логин" Width="100" DisplayMemberBinding="{Binding Логин}" />
+                    <GridViewColumn Header="Пароль" Width="100" DisplayMemberBinding="{Binding Пароль}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label FontSize="36" FontWeight="Bold" Margin="10,8,393,494" Content="Изменение данных сотрудника"/>
+        <Label FontSize="16" Margin="546,61,299,426" Content="Имя"/>
+        <TextBox x:Name="name" HorizontalAlignment="Left" Margin="546,94,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="225" Height="35"/>
+        <Label FontSize="16" Margin="546,129,311,362" Content="Фамилия"/>
+        <TextBox x:Name="familia" HorizontalAlignment="Left" Margin="546,164,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="225" Height="35"/>
+        <Label FontSize="16" Margin="548,204,299,276" Content="Отчество"/>
+        <TextBox x:Name="otcestvo" HorizontalAlignment="Left" Margin="546,239,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="225" Height="35"/>
+        <Label FontSize="16" Margin="544,274,285,194" Content="Серия паспорта"/>
+        <TextBox x:Name="seria" HorizontalAlignment="Left" Margin="546,307,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="225" Height="35"/>
+        <Label FontSize="16" Margin="546,342,250,144" Content="Номер паспорта"/>
+        <TextBox x:Name="nomerpas" HorizontalAlignment="Left" Margin="546,379,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="225" Height="35"/>
+        <Label FontSize="16" Margin="810,61,-41,379" Content="Номер телефона"/>
+        <TextBox x:Name="nomer" HorizontalAlignment="Left" Margin="810,94,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="232" Height="35"/>
+        <Label FontSize="16" Margin="810,129,0,299" Content="E-mail"/>
+        <TextBox x:Name="pocta" HorizontalAlignment="Left" Margin="810,164,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="232" Height="35"/>
+        <Label FontSize="16" Margin="810,204,-41,246" Content="Логин"/>
+        <TextBox x:Name="login" HorizontalAlignment="Left" Margin="810,239,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="232" Height="35"/>
+        <Label FontSize="16" Margin="810,274,10,194" Content="Пароль"/>
+        <TextBox x:Name="password" HorizontalAlignment="Left" Margin="810,307,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="232" Height="35"/>
+        <Button x:Name="skroy" Content="*" HorizontalAlignment="Left" Margin="1047,307,0,0" VerticalAlignment="Top" Height="35" Width="36" FontSize="22" Click="sk_Click" Background="#FF8CF029"/>
+        <Button x:Name="foto" Content="Изменить данные" HorizontalAlignment="Left" Margin="796,370,0,0" VerticalAlignment="Top" Height="44" Width="287" FontSize="22" Click="Foto_Click" Background="#FF8CF029" Foreground="Black" FontWeight="Bold"/>
+        <Button x:Name="foto_Copy" Content="Назад" HorizontalAlignment="Left" Margin="796,502,0,0" VerticalAlignment="Top" Height="44" Width="287" FontSize="22" Click="Foto_Click2" Background="#FF8CF029" Foreground="Black" FontWeight="Bold"/>
+        <Button x:Name="perehi" Content="Просмотр пользователей" HorizontalAlignment="Left" Margin="796,439,0,0" VerticalAlignment="Top" Height="44" Width="287" FontSize="22" Background="#FF8CF029" Foreground="Black" FontWeight="Bold" Click="perehi_Click"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="00288a4f66e34e2687e8b8e45084f659" Name="Diagram1" ZoomLevel="82">
+        <EntityTypeShape EntityType="RegistrationModel.sysdiagram" Width="1.5" PointX="2.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RegistrationModel.Должность" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="RegistrationModel.История" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RegistrationModel.Клиент" Width="1.5" PointX="10.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RegistrationModel.Корзина" Width="1.5" PointX="13" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="RegistrationModel.Паспорт" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RegistrationModel.Подразделение" Width="1.5" PointX="0.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RegistrationModel.Пол" Width="1.5" PointX="8.5" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RegistrationModel.Пользователь" Width="1.5" PointX="3" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RegistrationModel.Раздел" Width="1.5" PointX="8.5" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RegistrationModel.Товар" Width="1.5" PointX="10.75" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="RegistrationModel.FK_Пользователь_Должность" ManuallyRouted="false" />
+        <AssociationConnector Association="RegistrationModel.FK_История_Пользователь" ManuallyRouted="false" />
+        <AssociationConnector Association="RegistrationModel.FK_Клиент_Пол" ManuallyRouted="false" />
+        <AssociationConnector Association="RegistrationModel.FK_Корзина_Клиент" ManuallyRouted="false" />
+        <AssociationConnector Association="RegistrationModel.FK_Корзина_Товар" ManuallyRouted="false" />
+        <AssociationConnector Association="RegistrationModel.FK_Пользователь_Паспорт" ManuallyRouted="false" />
+        <AssociationConnector Association="RegistrationModel.FK_Пользователь_Подразделение" ManuallyRouted="false" />
+        <AssociationConnector Association="RegistrationModel.FK_Товар_Раздел" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,23 @@
+﻿<Window x:Class="FlowersShop.AdminIstiria"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlowersShop"
+        mc:Ignorable="d"
+        Title="AdminIstiria" Height="450" Width="800">
+    <Grid Margin="0,0,0,-71">
+    <DataGrid x:Name="usl" Margin="0,0,237,130" AutoGenerateColumns="False" CanUserAddRows="True">
+        <DataGrid.Columns>
+            <DataGridTextColumn IsReadOnly="True" Header="Код_входа" Width="100" Binding="{Binding Код_истории}"/>
+            <DataGridTextColumn Header="Логин" Width="170" Binding="{Binding Логин}"/>
+            <DataGridTextColumn Header="Время" Width="170" Binding="{Binding Время}"/>
+            <DataGridTextColumn Header="Пользователь" Width="100" Binding="{Binding Код_пользователя}"/>
+        </DataGrid.Columns>
+    </DataGrid>
+    <Button Margin="576,10,10,430" Click="data_Click" Background="#FF498C51" Foreground="White" Content="Сортировка по возрастанию даты" Height="50"/>
+    <Button Margin="576,100,10,340" Click="data2_Click" Background="#FF498C51" Foreground="White" Content="Сортировка по убыванию даты" Height="50"/>
+    <Button Margin="576,190,10,249" Click="login_Click" Background="#FF498C51" Foreground="White" Content="Сортировка по логину" Height="50"/>
+        <Button Margin="576,280,10,160" Click="nazad_Click" Background="#FF498C51" Foreground="White" Content="Далее" Height="50"/>
+    </Grid>
+</Window>

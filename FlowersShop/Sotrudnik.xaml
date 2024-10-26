@@ -1,0 +1,34 @@
+﻿<Window x:Class="FlowersShop.Sotrudnik"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlowersShop"
+        mc:Ignorable="d"
+        Title="Sotrudnik" Height="718.032" Width="800" Loaded="Window_Loaded_1">
+    <Grid>
+        <Label FontSize="36" FontWeight="Bold" Margin="158,10,308,618">Личный кабинет</Label>
+        <Image Margin="315,372,127,135" x:Name="foto2"/>
+        <Label FontSize="16" Margin="32,84,514,517" Content="Имя"/>
+        <TextBox x:Name="name" HorizontalAlignment="Left" Margin="32,109,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="225" Height="35"/>
+        <Label FontSize="16" Margin="32,144,514,452" Content="Фамилия"/>
+        <TextBox x:Name="familia" HorizontalAlignment="Left" Margin="32,175,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="225" Height="35"/>
+        <Label FontSize="16" Margin="32,210,514,400" Content="Отчество"/>
+        <TextBox x:Name="otcestvo" HorizontalAlignment="Left" Margin="32,240,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="225" Height="35"/>
+        <Label FontSize="16" Margin="32,280,494,300" Content="Серия паспорта"/>
+        <TextBox x:Name="seria" HorizontalAlignment="Left" Margin="32,309,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="225" Height="35"/>
+        <Label FontSize="16" Margin="32,344,494,232" Content="Номер паспорта"/>
+        <TextBox x:Name="nomerpas" HorizontalAlignment="Left" Margin="32,392,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="225" Height="36"/>
+        <Label FontSize="16" Margin="303,74,43,464" Content="Номер телефона"/>
+        <TextBox x:Name="nomer" HorizontalAlignment="Left" Margin="303,107,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="232" Height="35"/>
+        <Label FontSize="16" Margin="303,142,180,452" Content="E-mail"/>
+        <TextBox x:Name="pocta" HorizontalAlignment="Left" Margin="303,177,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="232" Height="35"/>
+        <Label FontSize="16" Margin="303,217,127,387" Content="Логин"/>
+        <TextBox x:Name="login" HorizontalAlignment="Left" Margin="303,252,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="232" Height="35"/>
+        <Label FontSize="16" Margin="303,287,199,279" Content="Пароль"/>
+        <TextBox x:Name="password" HorizontalAlignment="Left" Margin="303,320,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="232" Height="35"/>
+        <Button x:Name="skroy" Content="*" HorizontalAlignment="Left" Margin="557,320,0,0" VerticalAlignment="Top" Height="35" Width="36" FontSize="22" Click="sk_Click"/>
+        <Button x:Name="foto" Content="Изменить данные" HorizontalAlignment="Left" Margin="32,508,0,0" VerticalAlignment="Top" Height="44" Width="232" FontSize="22" Click="Foto_Click" Background="#FF8CF029" Foreground="Black" FontWeight="Bold"/>
+        <Button x:Name="foto_Copy" Content="Назад" HorizontalAlignment="Left" Margin="32,557,0,0" VerticalAlignment="Top" Height="44" Width="232" FontSize="22" Click="Foto_Click2" Background="#FF8CF029" Foreground="Black" FontWeight="Bold"/>
+    </Grid>
+</Window>
